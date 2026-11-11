@@ -249,7 +249,7 @@ export default function NetworkGraph({
                 <circle r={round(radius + 6)} fill={selected === node.id ? '#e4c77e' : node.id === 'you' ? '#85b69a' : 'transparent'} opacity={0.8} />
                 <circle r={round(radius + 2)} fill="#fff" />
                 <foreignObject x={-radius} y={-radius} width={round(radius * 2)} height={round(radius * 2)}>
-                  <div xmlns="http://www.w3.org/1999/xhtml" style={{ width: '100%', height: '100%' }}>
+                  <div style={{ width: '100%', height: '100%' }}>
                     <Portrait person={node} size={round(radius * 2)} />
                   </div>
                 </foreignObject>
